@@ -8,7 +8,7 @@
 <body>
 
     <div class="container">
-        <h1 id="Head">Intro to Git and GitHub for Beginners (Tutorial)</h1>
+        <h1 id="Head"> Git and GitHub Tutorial for Beginners </h1>
         <hr>
         <div class="steps">
             <h2 class="headings"> STEP:1 Install git and create a GitHub account</h2>
@@ -40,12 +40,50 @@
 
         <div class="steps">
             <h2 class="headings"> STEP:2 Create a local git repository </h2>
+            <p> Open a terminal(cmd) within a folder where you want to place the project on your local machine
+              <br>  To initialize a git repository in the root of the folder, run the <b>git init</b>  command: </p>
+             
+            <img src=".//images/pic(init).png" alt="">
+             
         </div>
 
         <div class="steps">
             <h2 class="headings"> STEP:3 Add new file in repository </h2>
+
+            <p>Create any type of file in git repo folder (eg index.html). Once you have added files in a folder containing a git repo,
+                git will notice that  the file exists inside the repo. But, git would not track the file unless you explicitly tell it .
+             </p>
+             <br>
+            <p> To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the git add <filename> command 
+               <br> run the  <b>git add < filename >  </b>  command: </p>
+            <img src="./images/(add).png" alt=""> <br><br>
+            <p>If you run the git status command, you'll see that git has added the file to the staging environment
+                 (notice the "Changes to be committed" line).. </p>
+            <img src="./images/(status).png" alt="">
+
+            
+        </div>
+        <div class="steps">
+            <h2 class="headings"> STEP:4  Create a commit </h2>
+            <p>
+                Now Go ahead and create first commit.
+                <br>
+                Run the <b>git commit -m "message about commit"</b>  command.
+
+            </p>
+            <img src="./images/commit.png" alt="">
+            <p>At the end of the commit ,the message should be something related to what the commit contains -</p>
+
         </div>
 
+
+        <div class="steps">
+            <h2 class="headings"> STEP:5  Push to GitHub </h2>
+            <p>After commit , push changes to GitHub .This allows others people to see changes you have made.</p>
+            <p>To push changes on Gihub , <b>git push</b> command is used</p>
+            <img src="./images/push.png" alt="">
+            </div>
+            
 
 
 
